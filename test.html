@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        strong {
+            font-weight: 400;
+        }
+
+        h1 {
+            background: red;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            z-index: 10;
+        }
+
+        .box {
+            width: 400px;
+            height: 800px;
+            display: inline-block;
+            vertical-align: top;
+            /* padding: 20px; */
+            /* overflow: auto; */
+        }
+
+        .box-sm {
+            width: 100px;
+            height: 100px;
+        }
+
+        .turquoise {
+            background-color: turquoise;
+            padding: 40px;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        .card {
+            border: 1px solid rgb(206, 206, 206);
+            border-radius: 6px;
+            width: 200px;
+            padding: 1rem;
+            margin-top: 2rem;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .card h4 {
+            margin-top: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .card p {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            width: 768px;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+            min-height: 500px;
+            position: relative;
+            /*this will make the wrapper the new reference point for the turquoise box*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <div class="box turquoise">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus iste iusto
+            deleniti
+            maxime. Unde pariatur nihil aut ullam, excepturi odit ducimus incidunt perferendis. Eligendi molestias iste
+            reprehenderit assumenda praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus
+            iste
+            iusto
+            deleniti
+            maxime. Unde pariatur nihil aut ullam, excepturi odit ducimus incidunt perferendis. Eligendi molestias iste
+            reprehenderit assumenda praesentium?
+            <div>
+                <img src="https://images.unsplash.com/photo-1636552394180-ba3aaa1194e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80"
+                alt="beautiful image">
+            </div>
+        </div>
+        <div class="box coral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facere. Magni, commodi
+            aut
+            blanditiis nihil inventore consequuntur, ducimus dicta necessitatibus officia assumenda perspiciatis libero
+            repellendus quasi! Eum quod ullam molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            ducimus iste iusto
+            deleniti
+            maxime. Unde pariatur nihil aut ullam, excepturi odit ducimus incidunt perferendis. Eligendi molestias iste
+            reprehenderit assumenda praesentium?</div>
+            
+            
+            <div class="card">
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eligendi aut exercitationem, ab dicta
+                    est consectetur mollitia excepturi similique quis animi ex expedita assumenda tempora. Corrupti quo
+                reiciendis placeat autem.</h4>
+                <p>Lorem ipsum <span>dolor</span> sit <a href="#">amet</a> <strong>consectetur</strong> <i>adipisicing
+                    elit.</i>
+                    <u>Illum eius minus porro</u>, eos aliquam perspiciatis amet
+                    quibusdam incidunt optio nemo, perferendis libero, magnam inventore fugit molestias. Pariatur
+                    dignissimos et
+                ipsam.
+            </p>
+        </div>
+        <div class="card">
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eligendi aut exercitationem, ab dicta
+                est consectetur mollitia excepturi similique quis animi ex expedita assumenda tempora. Corrupti quo
+                reiciendis placeat autem.</h4>
+                <p>Lorem ipsum <span>dolor</span> sit <a href="#">amet</a> <strong>consectetur</strong> <i>adipisicing
+                    elit.</i>
+                    Lorem ipsum <span>dolor</span> sit <a href="#">amet</a> <strong>consectetur</strong> <i>adipisicing
+                        elit.</i>
+                        <u>Illum eius minus porro</u>, eos aliquam perspiciatis amet
+                        quibusdam incidunt optio nemo, perferendis libero, magnam inventore fugit molestias. Pariatur
+                        dignissimos et
+                        ipsam.
+                    </p>
+                </div> -->
+
+
+        <div class="wrapper">
+            <div class="box box-sm turquoise" style="position: absolute; bottom: 0; right:0;"></div>
+            <div class="box box-sm coral"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
